@@ -1,5 +1,4 @@
 import { HStack, Image, Text } from '@chakra-ui/react';
-import { Link } from 'react-router-dom';
 import logo from '../assets/LegoImage.png';
 
 const NavBar = () => {
