@@ -4,6 +4,7 @@ import NavBar from './components/NavBar'
 function App() {
   return <Grid templateAreas={{
     base: `"nav" "main"`,
+    lg: `"nav nav" "aside main"`,
   }}
 
   // gridTemplateRows={'50px 1fr'}
