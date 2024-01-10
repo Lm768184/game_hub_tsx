@@ -16,10 +16,11 @@ function App() {
   // fontWeight='bold'
   >
     
-    <GridItem gridArea="nav" bg="red.300"><NavBar /></GridItem>
-    <Show above="lg"><GridItem gridArea="aside" bg="blue.300">aside</GridItem> </Show>
-    <GridItem gridArea="main" bg="green.300">main</GridItem>
-    <GameGrid />
+    <GridItem area="nav" bg="red.300"><NavBar /></GridItem>
+    <Show above="lg"><GridItem area="aside" bg="blue.300">aside</GridItem> </Show>
+    <GridItem area="main" bg="green.300"> </GridItem>   <GameGrid />
+
+    
   </Grid>
 }
 
