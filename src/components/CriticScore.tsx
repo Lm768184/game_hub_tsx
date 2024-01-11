@@ -9,9 +9,6 @@ interface Props {
 const CriticScore = ({score, background_image} : Props) => {
     const  color = score >= 90 ? 'grey' : score >= 75 ? 'yellow' : 'red'
 
-    const croppedUrl = getCroppedImageUrl(background_image, 200, 200);
-    console.log(croppedUrl); // Log the result
-
   return (
     <>
     <Badge borderRadius={"4"} fontSize={15} paddingX={2} color={color} >{score} </Badge>
