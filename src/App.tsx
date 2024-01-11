@@ -19,8 +19,6 @@ function App() {
     <GridItem area="nav" bg="red.300"><NavBar /></GridItem>
     <Show above="lg"><GridItem area="aside" bg="blue.300">aside</GridItem> </Show>
     <GridItem area="main" bg="orange.300"> <GameGrid />  </GridItem>  
-
-    
   </Grid>
 }
 
