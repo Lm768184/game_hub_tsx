@@ -3,9 +3,12 @@ import useGames from '../hooks/useGames'
 import GameCard from './GameCard'
 import GameCardSkeleton from './GameCardSkeleton'
 import GameCardContainer from './GameCardContainer'
+import useGenres from '../hooks/useGenres'
 
 const GameGrid = () => {
   const { games, error, loading } = useGames()
+  const { games1, error1, loading1 } = useGenres()
+
   const skeletons = [1, 2, 3, 4, 5, 6]
 
   return (
