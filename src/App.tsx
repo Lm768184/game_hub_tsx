@@ -9,7 +9,12 @@ function App() {
     lg: `"nav nav" "aside main"`,
   }}
 
-  // gridTemplateRows={'50px 1fr'}
+  gridTemplateColumns={{
+    base: '1fr',
+    lg: '200px  1fr'
+  }
+
+  }
   // gridTemplateColumns={'150px 1fr'}
   // h='70vw'
   // gap='1'
@@ -17,9 +22,9 @@ function App() {
   // fontWeight='bold'
   >
     
-    <GridItem area="nav" bg="red.300"><NavBar /></GridItem>
-    <Show above="lg"><GridItem area="aside" bg="blue.300"><GenreList /></GridItem> </Show>
-    <GridItem area="main" bg="orange.300"> <GameGrid />  </GridItem>  
+    <GridItem area="nav" bg="red.300" ><NavBar /></GridItem>
+    <Show above="lg"><GridItem area="aside" bg="blue.300" paddingX={5} ><GenreList /></GridItem> </Show>
+    <GridItem area="main" bg="orange.300"overflowX={'hidden'} > <GameGrid />  </GridItem>  
   </Grid>
 }
 
